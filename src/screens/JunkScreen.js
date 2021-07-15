@@ -5,7 +5,7 @@ export default function JunkScreen() {
   return (
     <View>
       <Text style={styles.first}>Getting start with React Native!</Text>
-      <Text>My name is {name}</Text>
+      <Text style={styles.second}>My name is {name}</Text>
     </View>
   )
 }

@@ -6,7 +6,7 @@ import LoginScreen from "./src/screens/LoginScreen"
 import JunkScreen from "./src/screens/JunkScreen"
 import ListScreen from "./src/screens/ListScreen"
 import CaptureScreen from "./src/screens/CaptureScreen"
-
+import ListViewScreen from "./src/screens/ListViewScreen"
 const navigator = createStackNavigator(
   {
     Home: HomeScreen,
@@ -14,10 +14,11 @@ const navigator = createStackNavigator(
     Login: LoginScreen,
     Junk: JunkScreen,
     List: ListScreen,
+    ListView: ListViewScreen,
     Capture: CaptureScreen,
   },
   {
-    initialRouteName: "List",
+    initialRouteName: "ListView",
     defaultNavigationOptions: {
       title: "Storefront",
       profile: "ComponentsScreen",

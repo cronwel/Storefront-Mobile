@@ -14,8 +14,8 @@ const ComponentsScreen = () => {
 
 const styles = StyleSheet.create({
   textStyle: {
-    fontSize: 20,
-    font: "arial-narrow",
+    fontSize: 40,
+    fontFamily: "arial-narrow",
   },
 })
 

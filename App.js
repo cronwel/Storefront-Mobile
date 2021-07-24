@@ -7,7 +7,14 @@ import JunkScreen from "./src/screens/JunkScreen"
 import ListScreen from "./src/screens/ListScreen"
 import CaptureScreen from "./src/screens/CaptureScreen"
 import ListViewScreen from "./src/screens/ListViewScreen"
+import MainMenuScreen from "./src/screens/MainMenuScreen"
+import ProductListScreen from "./src/screens/ProductListScreen"
+
 const navigator = createStackNavigator(
+  // these work with the .navigate function
+  // example
+  // inside of a Screen Button/TO
+  // onPress={ () => props.navigation.navigate("Login")}
   {
     Home: HomeScreen,
     Component1: ComponentsScreen,
@@ -16,9 +23,11 @@ const navigator = createStackNavigator(
     List: ListScreen,
     ListView: ListViewScreen,
     Capture: CaptureScreen,
+    MainMenu: MainMenuScreen,
+    ProductList: ProductListScreen,
   },
   {
-    initialRouteName: "ListView",
+    initialRouteName: "MainMenu",
     defaultNavigationOptions: {
       title: "Storefront",
       profile: "ComponentsScreen",

@@ -9,7 +9,7 @@ import ListScreen from "./src/screens/ListScreen"
 import CaptureScreen from "./src/screens/C_AdminScreens/CaptureScreen"
 import ListViewScreen from "./src/screens/ListViewScreen"
 import MainMenuScreen from "./src/screens/MainMenuScreen"
-import ProductListScreen from "./src/screens/ProductListScreen"
+import ProductListScreen from "./src/screens/D_ProductScreens/ProductListScreen"
 
 const navigator = createStackNavigator(
   // these work with the .navigate function

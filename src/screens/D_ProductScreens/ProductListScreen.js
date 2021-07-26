@@ -1,6 +1,8 @@
 import React from "react"
 import { StyleSheet, Text, View, FlatList } from "react-native"
-import ProductDetails from "../components/ProductDetails"
+import ProductDetails from "../../components/ProductDetails"
+import Cart from "../../components/Cart"
+
 const ProductListScreen = () => {
   const ProductData = [
     {
@@ -79,24 +81,31 @@ const ProductListScreen = () => {
     <View>
       <ProductDetails
         productName={ProductData[0].productName}
-        productImage={require("../../assets/images_products/001.png")}
+        productImage={require("../../../assets/images_products/001.png")}
         productPrice="9.00"
       />
+      <Cart />
+
       <ProductDetails
         productName="Igloo"
-        productImage={require("../../assets/images_products/002.png")}
+        productImage={require("../../../assets/images_products/002.png")}
         productPrice="9.00"
       />
+      <Cart />
+
       <ProductDetails
         productName="banana"
-        productImage={require("../../assets/images_products/003.png")}
+        productImage={require("../../../assets/images_products/003.png")}
         productPrice="9.00"
       />
+      <Cart />
+
       <ProductDetails
         productName="gasoline"
-        productImage={require("../../assets/images_products/004.png")}
+        productImage={require("../../../assets/images_products/004.png")}
         productPrice="9.00"
       />
+      <Cart />
     </View>
   )
 }

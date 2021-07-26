@@ -28,6 +28,10 @@ const MainMenuScreen = ({ navigation }) => {
         {" "}
         <Text> Junk </Text>
       </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate("Cart")}>
+        {" "}
+        <Text> Cart </Text>
+      </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate("List")}>
         {" "}
         <Text> List </Text>
@@ -36,7 +40,10 @@ const MainMenuScreen = ({ navigation }) => {
         {" "}
         <Text> ListView </Text>
       </TouchableOpacity>
-      <Text></Text>
+      <TouchableOpacity onPress={() => navigation.navigate("Login")}>
+        {" "}
+        <Text> Login </Text>
+      </TouchableOpacity>
     </View>
   )
 }

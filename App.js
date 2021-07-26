@@ -2,10 +2,11 @@ import { createAppContainer } from "react-navigation"
 import { createStackNavigator } from "react-navigation-stack"
 import HomeScreen from "./src/screens/HomeScreen"
 import ComponentsScreen from "./src/screens/ComponentsScreen"
-import LoginScreen from "./src/screens/LoginScreen"
-import JunkScreen from "./src/screens/JunkScreen"
+import LoginScreen from "./src/screens/A_AccessScreens/LoginScreen"
+import CartScreen from "./src/screens/E_CartScreens/CartScreen"
+import JunkScreen from "./src/screens/X_Random/JunkScreen"
 import ListScreen from "./src/screens/ListScreen"
-import CaptureScreen from "./src/screens/CaptureScreen"
+import CaptureScreen from "./src/screens/C_AdminScreens/CaptureScreen"
 import ListViewScreen from "./src/screens/ListViewScreen"
 import MainMenuScreen from "./src/screens/MainMenuScreen"
 import ProductListScreen from "./src/screens/ProductListScreen"
@@ -19,6 +20,7 @@ const navigator = createStackNavigator(
     Home: HomeScreen,
     Component1: ComponentsScreen,
     Login: LoginScreen,
+    Cart: CartScreen,
     Junk: JunkScreen,
     List: ListScreen,
     ListView: ListViewScreen,

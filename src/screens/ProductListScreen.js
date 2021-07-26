@@ -78,7 +78,7 @@ const ProductListScreen = () => {
   return (
     <View>
       <ProductDetails
-        productName="Stupid"
+        productName={ProductData[0].productName}
         productImage={require("../../assets/images_products/001.png")}
         productPrice="9.00"
       />

@@ -13,6 +13,7 @@ const Cart = () => {
         }}
       />
       <Button
+        style={styles.btnStyle}
         title="Remove From Cart"
         onPress={() => {
           setCart(cart - 1)
@@ -24,6 +25,15 @@ const Cart = () => {
   )
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  btnStyle: {
+    width: 200,
+    height: 40,
+    borderWidth: 2,
+    borderRadius: 10,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+})
 
 export default Cart

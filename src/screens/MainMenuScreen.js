@@ -20,10 +20,6 @@ const MainMenuScreen = ({ navigation }) => {
         {" "}
         <Text> Capture </Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => navigation.navigate("Component1")}>
-        {" "}
-        <Text> Component </Text>
-      </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate("Junk")}>
         {" "}
         <Text> Junk </Text>

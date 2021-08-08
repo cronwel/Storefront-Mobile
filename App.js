@@ -1,7 +1,6 @@
 import { createAppContainer } from "react-navigation"
 import { createStackNavigator } from "react-navigation-stack"
 import HomeScreen from "./src/screens/HomeScreen"
-import ComponentsScreen from "./src/screens/ComponentsScreen"
 import LoginScreen from "./src/screens/A_AccessScreens/LoginScreen"
 import CartScreen from "./src/screens/E_CartScreens/CartScreen"
 import JunkScreen from "./src/screens/X_Random/JunkScreen"
@@ -18,7 +17,6 @@ const navigator = createStackNavigator(
   // onPress={ () => props.navigation.navigate("Login")}
   {
     Home: HomeScreen,
-    Component1: ComponentsScreen,
     Login: LoginScreen,
     Cart: CartScreen,
     Junk: JunkScreen,
@@ -32,7 +30,7 @@ const navigator = createStackNavigator(
     initialRouteName: "MainMenu",
     defaultNavigationOptions: {
       title: "Storefront",
-      profile: "ComponentsScreen",
+      profile: "User",
     },
   }
 )
